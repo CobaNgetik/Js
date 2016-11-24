@@ -160,7 +160,7 @@ $('i[rel="pre"]').replaceWith(function() { return $('<pre><code>' + $(this).html
 $(function(){ // document ready
    if ($('#HTML1').length) { // make sure "#sticky" element exists
       var el = $('#HTML1');
-      var stickyTop = $('#Label1').offset().top; // returns number
+      var stickyTop = $('#HTML1').offset().top; // returns number
       var stickyHeight = $('#HTML1').height();
 
       $(window).scroll(function(){ // scroll event
